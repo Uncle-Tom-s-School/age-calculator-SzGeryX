@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   
@@ -13,21 +16,44 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <div class="container" id="bg">
+    <div class="container asd">
+      <div class="container labl">
+        <label for="day">Day: </label>
+        <input type="number" name="day" id="day" min="1" max="31">
+        <p class="error">This field is required</p>
+      </div>
+      
+      <div class="container labl">
+        <label for="month">Month: </label>
+        <input type="number" name="month" id="month" min="1" max="12">
+        <p class="error">This field is required</p>
+      </div>
+      
+      <div class="container labl">
+        <label for="year">Year: </label>
+        <input type="number" name="year" id="year">
+        <p class="error">This field is required</p>
+      </div>
+    </div>
 
-  Day
-  DD
+    <div class="container" style="width: 100%;">
+      <hr style="width: 100%;">
+      <div id="arrow">
+        <img src="assets/images/icon-arrow.svg" alt="">
+      </div>
+    </div>
 
-  Month
-  MM
-
-  Year
-  YYYY
-
-  -- years
-  -- months
-  -- days
+    <div class="container" id="output">
+      <h1><span id="yearo">--</span> years</h1>
+      <h1><span id="montho">--</span> months</h1>
+      <h1><span id="dayo">--</span> days</h1>
+    </div>
+  </div>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
